@@ -30,7 +30,7 @@
 		C94CB46125571E80004681A2 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		C94CB46525577902004681A2 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		C94CB46825582A19004681A2 /* Hand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
-		C99618F9255451E300960345 /* Blackjack2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blackjack2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C99618F9255451E300960345 /* Quackjack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quackjack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C99618FC255451E300960345 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C99618FE255451E300960345 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C9961900255451E300960345 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 		C99618FA255451E300960345 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C99618F9255451E300960345 /* Blackjack2.app */,
+				C99618F9255451E300960345 /* Quackjack.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,9 +145,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C99618F8255451E300960345 /* Blackjack2 */ = {
+		C99618F8255451E300960345 /* Quackjack */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C996190D255451E400960345 /* Build configuration list for PBXNativeTarget "Blackjack2" */;
+			buildConfigurationList = C996190D255451E400960345 /* Build configuration list for PBXNativeTarget "Quackjack" */;
 			buildPhases = (
 				C99618F5255451E300960345 /* Sources */,
 				C99618F6255451E300960345 /* Frameworks */,
@@ -157,9 +157,9 @@
 			);
 			dependencies = (
 			);
-			name = Blackjack2;
+			name = Quackjack;
 			productName = Blackjack2;
-			productReference = C99618F9255451E300960345 /* Blackjack2.app */;
+			productReference = C99618F9255451E300960345 /* Quackjack.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -189,7 +189,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C99618F8255451E300960345 /* Blackjack2 */,
+				C99618F8255451E300960345 /* Quackjack */,
 			);
 		};
 /* End PBXProject section */
@@ -375,7 +375,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bitbybit.BeginningBlackjack;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitbybit.Quackjack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
@@ -399,7 +399,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bitbybit.BeginningBlackjack;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitbybit.Quackjack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
@@ -419,7 +419,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C996190D255451E400960345 /* Build configuration list for PBXNativeTarget "Blackjack2" */ = {
+		C996190D255451E400960345 /* Build configuration list for PBXNativeTarget "Quackjack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C996190E255451E400960345 /* Debug */,
