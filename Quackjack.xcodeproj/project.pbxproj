@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C94CB46225571E80004681A2 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94CB46125571E80004681A2 /* BackgroundView.swift */; };
+		C94CB46625577902004681A2 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94CB46525577902004681A2 /* Deck.swift */; };
+		C94CB46925582A19004681A2 /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94CB46825582A19004681A2 /* Hand.swift */; };
+		C99618FD255451E300960345 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99618FC255451E300960345 /* AppDelegate.swift */; };
+		C99618FF255451E300960345 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99618FE255451E300960345 /* SceneDelegate.swift */; };
+		C9961901255451E300960345 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9961900255451E300960345 /* ContentView.swift */; };
+		C9961903255451E400960345 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9961902255451E400960345 /* Assets.xcassets */; };
+		C9961906255451E400960345 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9961905255451E400960345 /* Preview Assets.xcassets */; };
+		C9961909255451E400960345 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9961907255451E400960345 /* LaunchScreen.storyboard */; };
+		C99619122554520B00960345 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99619112554520B00960345 /* CardView.swift */; };
+		C99619172554BFB100960345 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99619162554BFB100960345 /* Card.swift */; };
+		C996191A2554C00C00960345 /* HandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99619192554C00C00960345 /* HandView.swift */; };
+		C996191F2554C08000960345 /* StatefulPreviewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C996191E2554C08000960345 /* StatefulPreviewWrapper.swift */; };
+		C9D40AB62559C15B00EBB69C /* StartMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D40AB52559C15B00EBB69C /* StartMenuView.swift */; };
+		C9D40AB92559C31000EBB69C /* FullScreenModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D40AB82559C31000EBB69C /* FullScreenModalView.swift */; };
+		C9E9549C255C5F43008D8081 /* cardsgreensquare.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E9549A255C5F43008D8081 /* cardsgreensquare.png */; };
+		C9E9549D255C5F43008D8081 /* cardssgreen.xcf in Resources */ = {isa = PBXBuildFile; fileRef = C9E9549B255C5F43008D8081 /* cardssgreen.xcf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C94CB46125571E80004681A2 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		C94CB46525577902004681A2 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		C94CB46825582A19004681A2 /* Hand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
+		C99618F9255451E300960345 /* Blackjack2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blackjack2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C99618FC255451E300960345 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C99618FE255451E300960345 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C9961900255451E300960345 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C9961902255451E400960345 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9961905255451E400960345 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C9961908255451E400960345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C996190A255451E400960345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C99619112554520B00960345 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		C99619162554BFB100960345 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		C99619192554C00C00960345 /* HandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandView.swift; sourceTree = "<group>"; };
+		C996191E2554C08000960345 /* StatefulPreviewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatefulPreviewWrapper.swift; sourceTree = "<group>"; };
+		C9D40AA42559AFDE00EBB69C /* Quackjack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Quackjack.entitlements; sourceTree = "<group>"; };
+		C9D40AB52559C15B00EBB69C /* StartMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartMenuView.swift; sourceTree = "<group>"; };
+		C9D40AB82559C31000EBB69C /* FullScreenModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenModalView.swift; sourceTree = "<group>"; };
+		C9E9549A255C5F43008D8081 /* cardsgreensquare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardsgreensquare.png; sourceTree = "<group>"; };
+		C9E9549B255C5F43008D8081 /* cardssgreen.xcf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cardssgreen.xcf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C99618F6255451E300960345 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C94CB45D25571934004681A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C94CB46825582A19004681A2 /* Hand.swift */,
+				C99619162554BFB100960345 /* Card.swift */,
+				C94CB46525577902004681A2 /* Deck.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C94CB45E2557193F004681A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C99619192554C00C00960345 /* HandView.swift */,
+				C99619112554520B00960345 /* CardView.swift */,
+				C94CB46125571E80004681A2 /* BackgroundView.swift */,
+				C9D40AB52559C15B00EBB69C /* StartMenuView.swift */,
+				C9D40AB82559C31000EBB69C /* FullScreenModalView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C94CB45F25571954004681A2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C996191E2554C08000960345 /* StatefulPreviewWrapper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C99618F0255451E300960345 = {
+			isa = PBXGroup;
+			children = (
+				C99618FB255451E300960345 /* Quackjack */,
+				C99618FA255451E300960345 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C99618FA255451E300960345 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C99618F9255451E300960345 /* Blackjack2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C99618FB255451E300960345 /* Quackjack */ = {
+			isa = PBXGroup;
+			children = (
+				C9D40AA42559AFDE00EBB69C /* Quackjack.entitlements */,
+				C99618FC255451E300960345 /* AppDelegate.swift */,
+				C99618FE255451E300960345 /* SceneDelegate.swift */,
+				C9961900255451E300960345 /* ContentView.swift */,
+				C94CB45D25571934004681A2 /* Models */,
+				C94CB45E2557193F004681A2 /* Views */,
+				C94CB45F25571954004681A2 /* Utils */,
+				C9E95498255C5EE0008D8081 /* Resources */,
+				C9961902255451E400960345 /* Assets.xcassets */,
+				C9961907255451E400960345 /* LaunchScreen.storyboard */,
+				C996190A255451E400960345 /* Info.plist */,
+				C9961904255451E400960345 /* Preview Content */,
+			);
+			path = Quackjack;
+			sourceTree = "<group>";
+		};
+		C9961904255451E400960345 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C9961905255451E400960345 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C9E95498255C5EE0008D8081 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C9E9549A255C5F43008D8081 /* cardsgreensquare.png */,
+				C9E9549B255C5F43008D8081 /* cardssgreen.xcf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C99618F8255451E300960345 /* Blackjack2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C996190D255451E400960345 /* Build configuration list for PBXNativeTarget "Blackjack2" */;
+			buildPhases = (
+				C99618F5255451E300960345 /* Sources */,
+				C99618F6255451E300960345 /* Frameworks */,
+				C99618F7255451E300960345 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Blackjack2;
+			productName = Blackjack2;
+			productReference = C99618F9255451E300960345 /* Blackjack2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C99618F1255451E300960345 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					C99618F8255451E300960345 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = C99618F4255451E300960345 /* Build configuration list for PBXProject "Quackjack" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C99618F0255451E300960345;
+			productRefGroup = C99618FA255451E300960345 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C99618F8255451E300960345 /* Blackjack2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C99618F7255451E300960345 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E9549D255C5F43008D8081 /* cardssgreen.xcf in Resources */,
+				C9961909255451E400960345 /* LaunchScreen.storyboard in Resources */,
+				C9961906255451E400960345 /* Preview Assets.xcassets in Resources */,
+				C9E9549C255C5F43008D8081 /* cardsgreensquare.png in Resources */,
+				C9961903255451E400960345 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C99618F5255451E300960345 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C94CB46625577902004681A2 /* Deck.swift in Sources */,
+				C9D40AB62559C15B00EBB69C /* StartMenuView.swift in Sources */,
+				C99618FD255451E300960345 /* AppDelegate.swift in Sources */,
+				C9D40AB92559C31000EBB69C /* FullScreenModalView.swift in Sources */,
+				C99618FF255451E300960345 /* SceneDelegate.swift in Sources */,
+				C94CB46225571E80004681A2 /* BackgroundView.swift in Sources */,
+				C99619172554BFB100960345 /* Card.swift in Sources */,
+				C9961901255451E300960345 /* ContentView.swift in Sources */,
+				C94CB46925582A19004681A2 /* Hand.swift in Sources */,
+				C99619122554520B00960345 /* CardView.swift in Sources */,
+				C996191A2554C00C00960345 /* HandView.swift in Sources */,
+				C996191F2554C08000960345 /* StatefulPreviewWrapper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C9961907255451E400960345 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9961908255451E400960345 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C996190B255451E400960345 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C996190C255451E400960345 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C996190E255451E400960345 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Quackjack/Quackjack.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "Quackjack/\"Preview Content\"";
+				DEVELOPMENT_TEAM = HCXH5PWVYZ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Quackjack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitbybit.BeginningBlackjack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C996190F255451E400960345 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Quackjack/Quackjack.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "Quackjack/\"Preview Content\"";
+				DEVELOPMENT_TEAM = HCXH5PWVYZ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Quackjack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitbybit.BeginningBlackjack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C99618F4255451E300960345 /* Build configuration list for PBXProject "Quackjack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C996190B255451E400960345 /* Debug */,
+				C996190C255451E400960345 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C996190D255451E400960345 /* Build configuration list for PBXNativeTarget "Blackjack2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C996190E255451E400960345 /* Debug */,
+				C996190F255451E400960345 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C99618F1255451E300960345 /* Project object */;
+}
