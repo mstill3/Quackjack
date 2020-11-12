@@ -7,65 +7,101 @@
 
 import SwiftUI
 
+struct GradientBackgroundStyle: ButtonStyle {
+ 
+    func makeBody(configuration: Self.Configuration) -> some View {
+        configuration.label
+            .frame(minWidth: 0, maxWidth: .infinity)
+            .padding()
+            .foregroundColor(.white)
+            .background(LinearGradient(gradient: Gradient(colors: [Color.green, Color.blue]), startPoint: .leading, endPoint: .trailing))
+            .cornerRadius(40)
+            .padding(.horizontal, 20)
+            .scaleEffect(configuration.isPressed ? 0.9 : 1.0)
+    }
+}
+
+enum GAME_STATE {
+    case ON_PAGE
+    case ON_PLAY_CLICK
+    case ON_SETTINGS_CLICK
+    case ON_ABOUT_CLICK
+}
+
 struct StartMenuView: View {
+    
+    @State var state: GAME_STATE = GAME_STATE.ON_PAGE
+
+    
+    func onPlayButtonPressed() -> Void {
+        state = GAME_STATE.ON_PLAY_CLICK
+    }
+
+    func onSettingsButtonPressed() -> Void {
+        state = GAME_STATE.ON_SETTINGS_CLICK
+    }
+
+    func onAboutButtonPressed() -> Void {
+        state = GAME_STATE.ON_ABOUT_CLICK
+    }
+    
     var body: some View {
+        Group {
+            if (state == GAME_STATE.ON_PAGE) {
+               pageBody
+            } else if (state == GAME_STATE.ON_PLAY_CLICK) {
+                GameView()
+            } else if (state == GAME_STATE.ON_SETTINGS_CLICK) {
+                SettingsView()
+            } else if (state == GAME_STATE.ON_ABOUT_CLICK) {
+                AboutView()
+            }
+        }
+
+    }
+    
+    var pageBody: some View {
         ZStack {
-//            BackgroundView()
-//
-//            VStack {
-//
-//                Text("Blackjack")
-//                    .bold()
-//                    .padding()
-//                    .font(.title)
-//
-//                // Bet Credits
-//                Text("Bet: \(betCredits)")
-//
-//
-//                // Credits
-//                Text("Credits: \(credits)")
-//
-//                // Play Button
-//                Button(action: onPlayButtonClick,
-//                label: {
-//                    Text("Play")
-//                })
-//                .disabled(playing)
-//                .foregroundColor(.white)
-//                .padding(.all, 10)
-//                .padding([.leading, .trailing], 20)
-//                .background(Color.blue.opacity(0.8), alignment: .center)
-//                .cornerRadius(20)
-//
-//
-//                // Bet Settings
-//                HStack {
-//
-//                    Button(action: onDecreaseBetButtonClick,
-//                    label: {
-//                        Text("Decrease Bet")
-//                    })
-//                    .disabled(!playing)
-//                    .foregroundColor(.white)
-//                    .padding(.all, 10)
-//                    .padding([.leading, .trailing], 20)
-//                    .background(Color.blue.opacity(0.8), alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-//                    .cornerRadius(20)
-//
-//                    Button(action: onIncreaseBetButtonClick,
-//                    label: {
-//                        Text("Increase Bet")
-//                    })
-//                    .disabled(!playing)
-//                    .foregroundColor(.white)
-//                    .padding(.all, 10)
-//                    .padding([.leading, .trailing], 20)
-//                    .background(Color.blue.opacity(0.8), alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-//                    .cornerRadius(20)
-//
-//                }
-//            }
+            
+            Rectangle()
+                .foregroundColor(.white)
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            
+            VStack {
+            
+                Text("Quackjack")
+                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                
+                VStack {
+
+                    
+                    
+                    Button(action: onPlayButtonPressed,
+                        label: {
+                            Text("Play")
+                        })
+                            .buttonStyle(GradientBackgroundStyle())
+
+                        
+                        Button(action: onSettingsButtonPressed,
+                        label: {
+                            Text("Settings")
+                        })
+                            .buttonStyle(GradientBackgroundStyle())
+                        
+                        Button(action: onAboutButtonPressed,
+                        label: {
+                            Text("About")
+                        })
+                            .buttonStyle(GradientBackgroundStyle())
+                        
+                    
+                
+                }
+                .padding()
+
+            }
+            
         }
     }
 }
