@@ -1,0 +1,5 @@
+
+Add music toggable in settings
+marketplace for buying ducks
+persist credits for users
+implement ads when broke and need credits

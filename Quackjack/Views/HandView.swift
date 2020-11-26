@@ -44,6 +44,7 @@ struct HandView: View {
     var body: some View {
         VStack {
             Text("\(getTotalPointValue())")
+                .foregroundColor(.black)
             VStack {
                 HStack {
                     Spacer()

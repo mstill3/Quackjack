@@ -15,6 +15,7 @@ struct GameView: View {
     @State private var result: String = ""
     
     enum GAME_STATE {
+        case BACK
         case UNSTARTED
         case PLAYING
         case COMPLETED
@@ -73,6 +74,10 @@ struct GameView: View {
         } else {
             return Color.blue.opacity(0.8)
         }
+    }
+    
+    func onBackButtonClick() -> Void {
+        gameState = GAME_STATE.BACK
     }
 
     func onPlayButtonClick() -> Void {
@@ -247,134 +252,176 @@ struct GameView: View {
         }
     }
     
+    
     var body: some View {
-        ZStack {
-            
-           BackgroundView()
-            
-            // Content
-            VStack {
-                
-                // Title
-                Text("Blackjack")
-                    .bold()
-                    .padding()
-                    .font(.title)
-                
-                // Dealer Hand
-                HandView (
-                    hand: $dealerHand
-                )
-                
-                // Player Hand
-                HandView (
-                    hand: $playerHand
-                )
-                
-                // Result
-                Text("\(result)")
-
-                // Bet Credits
-                Text("Bet: \(betCredits)")
-                
-                
-                // Credits
-                Text("Credits: \(credits)")
-                
-//                Button("Present!") {
-//                    self.isPresented.toggle()
-//                }
-//                .fullScreenCover(isPresented: $isPresented, content: FullScreenModalView.init)
-            
-                
-                HStack {
-                    // Play Button
-                    Button(action: onPlayButtonClick,
-                    label: {
-                        Text("Play")
-                    })
-                    .disabled(gameState != GAME_STATE.UNSTARTED)
-                    .foregroundColor(.white)
-                    .padding(.all, 10)
-                    .padding([.leading, .trailing], 20)
-                    .background(getButtonColor(disabled: gameState != GAME_STATE.UNSTARTED), alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    .cornerRadius(20)
-                    
-                    
-                    // Reset Button
-                    Button(action: onResetButtonClick,
-                    label: {
-                        Text("Reset")
-                    })
-                    .disabled(gameState != GAME_STATE.COMPLETED)
-                    .foregroundColor(.white)
-                    .padding(.all, 10)
-                    .padding([.leading, .trailing], 20)
-                    .background(getButtonColor(disabled: gameState != GAME_STATE.COMPLETED), alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    .cornerRadius(20)
+        Group {
+            if (gameState == GAME_STATE.BACK) {
+               StartMenuView()
+            } else {
+                NavigationView {
+                    pageBody
                 }
-                
-                
-                // Bet Settings
-                HStack {
-
-                    Button(action: onDecreaseBetButtonClick,
-                    label: {
-                        Text("Decrease Bet")
-                    })
-                    .disabled(gameState != GAME_STATE.UNSTARTED)
-                    .foregroundColor(.white)
-                    .padding(.all, 10)
-                    .padding([.leading, .trailing], 20)
-                    .background(getButtonColor(disabled: gameState != GAME_STATE.UNSTARTED), alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    .cornerRadius(20)
-                    
-                    Button(action: onIncreaseBetButtonClick,
-                    label: {
-                        Text("Increase Bet")
-                    })
-                    .disabled(gameState != GAME_STATE.UNSTARTED)
-                    .foregroundColor(.white)
-                    .padding(.all, 10)
-                    .padding([.leading, .trailing], 20)
-                    .background(getButtonColor(disabled: gameState != GAME_STATE.UNSTARTED), alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    .cornerRadius(20)
-                    
-                }
-                
-                
-                
-                
-                // Player Options
-                HStack {
-                    
-                    Button(action: onHitButtonClick,
-                    label: {
-                        Text("Hit")
-                    })
-                    .disabled(gameState != GAME_STATE.PLAYING)
-                    .foregroundColor(.white)
-                    .padding(.all, 10)
-                    .padding([.leading, .trailing], 20)
-                    .background(getButtonColor(disabled: gameState != GAME_STATE.PLAYING), alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    .cornerRadius(20)
-                    
-                    Button(action: onStayButtonClick,
-                    label: {
-                        Text("Stay")
-                    })
-                    .disabled(gameState != GAME_STATE.PLAYING)
-                    .foregroundColor(.white)
-                    .padding(.all, 10)
-                    .padding([.leading, .trailing], 20)
-                    .background(getButtonColor(disabled: gameState != GAME_STATE.PLAYING), alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    .cornerRadius(20)
-                    
-                }
-                
+                .padding(.top, 0.0)
             }
-            .animation(.default)
         }
+
+    }
+    
+    var pageBody: some View {
+
+            ZStack {
+                
+               BackgroundView()
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        HStack {
+                            Button(action: onBackButtonClick, label: {
+                                Text("Bjack")
+                                    .foregroundColor(.white)
+                                        .padding(.all, 10)
+                                        .padding([.leading, .trailing], 20)
+                                    .background(Color.red, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                        .cornerRadius(20)
+                            })
+                        }}
+                    
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        HStack {
+                            Button(action: onBackButtonClick, label: {
+                                Text("other")
+                                    .foregroundColor(.white)
+                            })
+                        }}
+                }
+                
+                
+                // Content
+                VStack {
+
+    //                // Title
+    //                Text("Blackjack")
+    //                    .bold()
+    //                    .padding()
+    //                    .font(.title)
+                    
+                    // Dealer Hand
+                    HandView (
+                        hand: $dealerHand
+                    )
+                    
+                    // Player Hand
+                    HandView (
+                        hand: $playerHand
+                    )
+                    
+                    // Result
+                    Text("\(result)")
+                        .foregroundColor(.black)
+
+                    // Bet Credits
+                    Text("Bet: \(betCredits)")
+                        .foregroundColor(.black)
+                    
+                    
+                    // Credits
+                    Text("Credits: \(credits)")
+                        .foregroundColor(.black)
+                    
+    //                Button("Present!") {
+    //                    self.isPresented.toggle()
+    //                }
+    //                .fullScreenCover(isPresented: $isPresented, content: FullScreenModalView.init)
+                
+                    
+                    HStack {
+                        // Play Button
+                        Button(action: onPlayButtonClick,
+                        label: {
+                            Text("Play")
+                        })
+                        .disabled(gameState != GAME_STATE.UNSTARTED)
+                        .foregroundColor(.white)
+                        .padding(.all, 10)
+                        .padding([.leading, .trailing], 20)
+                        .background(getButtonColor(disabled: gameState != GAME_STATE.UNSTARTED), alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .cornerRadius(20)
+                        
+                        
+                        // Reset Button
+                        Button(action: onResetButtonClick,
+                        label: {
+                            Text("Reset")
+                        })
+                        .disabled(gameState != GAME_STATE.COMPLETED)
+                        .foregroundColor(.white)
+                        .padding(.all, 10)
+                        .padding([.leading, .trailing], 20)
+                        .background(getButtonColor(disabled: gameState != GAME_STATE.COMPLETED), alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .cornerRadius(20)
+                    }
+                    
+                    
+                    // Bet Settings
+                    HStack {
+
+                        Button(action: onDecreaseBetButtonClick,
+                        label: {
+                            Text("Decrease Bet")
+                        })
+                        .disabled(gameState != GAME_STATE.UNSTARTED)
+                        .foregroundColor(.white)
+                        .padding(.all, 10)
+                        .padding([.leading, .trailing], 20)
+                        .background(getButtonColor(disabled: gameState != GAME_STATE.UNSTARTED), alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .cornerRadius(20)
+                        
+                        Button(action: onIncreaseBetButtonClick,
+                        label: {
+                            Text("Increase Bet")
+                        })
+                        .disabled(gameState != GAME_STATE.UNSTARTED)
+                        .foregroundColor(.white)
+                        .padding(.all, 10)
+                        .padding([.leading, .trailing], 20)
+                        .background(getButtonColor(disabled: gameState != GAME_STATE.UNSTARTED), alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .cornerRadius(20)
+                        
+                    }
+                    
+                    
+                    
+                    
+                    // Player Options
+                    HStack {
+                        
+                        Button(action: onHitButtonClick,
+                        label: {
+                            Text("Hit")
+                        })
+                        .disabled(gameState != GAME_STATE.PLAYING)
+                        .foregroundColor(.white)
+                        .padding(.all, 10)
+                        .padding([.leading, .trailing], 20)
+                        .background(getButtonColor(disabled: gameState != GAME_STATE.PLAYING), alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .cornerRadius(20)
+                        
+                        Button(action: onStayButtonClick,
+                        label: {
+                            Text("Stay")
+                        })
+                        .disabled(gameState != GAME_STATE.PLAYING)
+                        .foregroundColor(.white)
+                        .padding(.all, 10)
+                        .padding([.leading, .trailing], 20)
+                        .background(getButtonColor(disabled: gameState != GAME_STATE.PLAYING), alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .cornerRadius(20)
+                        
+                    }
+                    
+                }
+                .animation(.default)
+                .offset(x: 0, y: -50)
+            }
         
     }
 }

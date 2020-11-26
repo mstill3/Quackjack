@@ -69,8 +69,14 @@ struct StartMenuView: View {
             
             VStack {
             
+                Image("duck")
+                    .resizable()
+                    .frame(width: 75, height: 60, alignment: .center)
+                
                 Text("Quackjack")
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(.black)
+                
                 
                 VStack {
 
