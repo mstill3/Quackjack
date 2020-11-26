@@ -22,6 +22,8 @@
 		C996191F2554C08000960345 /* StatefulPreviewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C996191E2554C08000960345 /* StatefulPreviewWrapper.swift */; };
 		C9D40AB62559C15B00EBB69C /* StartMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D40AB52559C15B00EBB69C /* StartMenuView.swift */; };
 		C9D40AB92559C31000EBB69C /* FullScreenModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D40AB82559C31000EBB69C /* FullScreenModalView.swift */; };
+		C9DC8F4D2570452800A17712 /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DC8F4C2570452800A17712 /* MarketView.swift */; };
+		C9DC8F50257046B800A17712 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DC8F4F257046B800A17712 /* GalleryView.swift */; };
 		C9E9549C255C5F43008D8081 /* cardsgreensquare.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E9549A255C5F43008D8081 /* cardsgreensquare.png */; };
 		C9E9549D255C5F43008D8081 /* cardssgreen.xcf in Resources */ = {isa = PBXBuildFile; fileRef = C9E9549B255C5F43008D8081 /* cardssgreen.xcf */; };
 		C9ED2663255CD4C1002B607E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ED2662255CD4C1002B607E /* SettingsView.swift */; };
@@ -50,6 +52,8 @@
 		C9D40AA42559AFDE00EBB69C /* Quackjack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Quackjack.entitlements; sourceTree = "<group>"; };
 		C9D40AB52559C15B00EBB69C /* StartMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartMenuView.swift; sourceTree = "<group>"; };
 		C9D40AB82559C31000EBB69C /* FullScreenModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenModalView.swift; sourceTree = "<group>"; };
+		C9DC8F4C2570452800A17712 /* MarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketView.swift; sourceTree = "<group>"; };
+		C9DC8F4F257046B800A17712 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		C9E9549A255C5F43008D8081 /* cardsgreensquare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardsgreensquare.png; sourceTree = "<group>"; };
 		C9E9549B255C5F43008D8081 /* cardssgreen.xcf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cardssgreen.xcf; sourceTree = "<group>"; };
 		C9ED2662255CD4C1002B607E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 				C9ED2662255CD4C1002B607E /* SettingsView.swift */,
 				C9ED2665255CD4D0002B607E /* AboutView.swift */,
 				C9F0BBDD25607E65002EE8CC /* ItemToolbar.swift */,
+				C9DC8F4C2570452800A17712 /* MarketView.swift */,
+				C9DC8F4F257046B800A17712 /* GalleryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -237,6 +243,7 @@
 				C99618FF255451E300960345 /* SceneDelegate.swift in Sources */,
 				C94CB46225571E80004681A2 /* BackgroundView.swift in Sources */,
 				C99619172554BFB100960345 /* Card.swift in Sources */,
+				C9DC8F50257046B800A17712 /* GalleryView.swift in Sources */,
 				C9961901255451E300960345 /* GameView.swift in Sources */,
 				C9ED2666255CD4D0002B607E /* AboutView.swift in Sources */,
 				C94CB46925582A19004681A2 /* Hand.swift in Sources */,
@@ -246,6 +253,7 @@
 				C996191F2554C08000960345 /* StatefulPreviewWrapper.swift in Sources */,
 				C9F0BBDE25607E65002EE8CC /* ItemToolbar.swift in Sources */,
 				C9ED2663255CD4C1002B607E /* SettingsView.swift in Sources */,
+				C9DC8F4D2570452800A17712 /* MarketView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
