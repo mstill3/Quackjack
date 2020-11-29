@@ -35,6 +35,15 @@ struct GameView: View {
         _playerHand = State(initialValue: [deck.draw(), deck.draw()])
     }
     
+    func onMount() {
+        print("ContentView appeared!")
+        credits = Store.getCredits()
+    }
+    
+    func onUnmount() {
+        print("ContentView disappeared!")
+    }
+    
     private func flipCard(person: String, num: Int) -> Void {
         if (person == "player") {
             playerHand[num-1].flippedOver.toggle()
@@ -245,6 +254,9 @@ struct GameView: View {
         } else {
             gameState = GAME_STATE.COMPLETED
         }
+        
+        // Setting
+        Store.setCredits(credits: credits)
     }
     
     
@@ -377,6 +389,10 @@ struct GameView: View {
             }
             .animation(.default)
             .offset(x: 0, y: -50)
+        }.onAppear {
+            onMount()
+        }.onDisappear {
+            onUnmount()
         }
     
     }

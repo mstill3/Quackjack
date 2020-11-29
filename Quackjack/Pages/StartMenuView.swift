@@ -18,6 +18,10 @@ extension Text {
     }
 }
 
+func onMount() {
+    Store.saveAllDucks()
+}
+
 struct StartMenuView: View {
     var body: some View {
         NavigationView {
@@ -69,6 +73,10 @@ struct StartMenuView: View {
                 }
     
             }
+            .offset(x: 0, y: -50)
+
+        }.onAppear {
+            onMount()
         }
     }
 }

@@ -25,7 +25,7 @@ struct AboutView: View {
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                     .foregroundColor(.black)
                 
-                Text("This is an app written by Natt Stilwell")
+                Text("This is an app written by Matt Stilwell")
             }
             .offset(x: 0, y: -50)
             

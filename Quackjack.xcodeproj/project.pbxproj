@@ -10,8 +10,6 @@
 		C94CB46225571E80004681A2 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94CB46125571E80004681A2 /* BackgroundView.swift */; };
 		C94CB46625577902004681A2 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94CB46525577902004681A2 /* Deck.swift */; };
 		C94CB46925582A19004681A2 /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94CB46825582A19004681A2 /* Hand.swift */; };
-		C99618FD255451E300960345 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99618FC255451E300960345 /* AppDelegate.swift */; };
-		C99618FF255451E300960345 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99618FE255451E300960345 /* SceneDelegate.swift */; };
 		C9961901255451E300960345 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9961900255451E300960345 /* GameView.swift */; };
 		C9961903255451E400960345 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9961902255451E400960345 /* Assets.xcassets */; };
 		C9961906255451E400960345 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9961905255451E400960345 /* Preview Assets.xcassets */; };
@@ -24,6 +22,11 @@
 		C9D40AB92559C31000EBB69C /* FullScreenModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D40AB82559C31000EBB69C /* FullScreenModalView.swift */; };
 		C9DC8F4D2570452800A17712 /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DC8F4C2570452800A17712 /* MarketView.swift */; };
 		C9DC8F50257046B800A17712 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DC8F4F257046B800A17712 /* GalleryView.swift */; };
+		C9DC8F5325707D3800A17712 /* GalleryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DC8F5225707D3800A17712 /* GalleryItemView.swift */; };
+		C9DC8F5625707E0700A17712 /* MarketItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DC8F5525707E0700A17712 /* MarketItemView.swift */; };
+		C9DC8F5A2570800C00A17712 /* Duck.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DC8F592570800C00A17712 /* Duck.swift */; };
+		C9DC8F802572CA9500A17712 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DC8F7F2572CA9500A17712 /* App.swift */; };
+		C9DC8F8E2572CFFA00A17712 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DC8F8D2572CFFA00A17712 /* Store.swift */; };
 		C9E9549C255C5F43008D8081 /* cardsgreensquare.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E9549A255C5F43008D8081 /* cardsgreensquare.png */; };
 		C9E9549D255C5F43008D8081 /* cardssgreen.xcf in Resources */ = {isa = PBXBuildFile; fileRef = C9E9549B255C5F43008D8081 /* cardssgreen.xcf */; };
 		C9ED2663255CD4C1002B607E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ED2662255CD4C1002B607E /* SettingsView.swift */; };
@@ -38,8 +41,6 @@
 		C94CB46525577902004681A2 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		C94CB46825582A19004681A2 /* Hand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
 		C99618F9255451E300960345 /* Quackjack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quackjack.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C99618FC255451E300960345 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C99618FE255451E300960345 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C9961900255451E300960345 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		C9961902255451E400960345 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9961905255451E400960345 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -49,11 +50,15 @@
 		C99619162554BFB100960345 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		C99619192554C00C00960345 /* HandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandView.swift; sourceTree = "<group>"; };
 		C996191E2554C08000960345 /* StatefulPreviewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatefulPreviewWrapper.swift; sourceTree = "<group>"; };
-		C9D40AA42559AFDE00EBB69C /* Quackjack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Quackjack.entitlements; sourceTree = "<group>"; };
 		C9D40AB52559C15B00EBB69C /* StartMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartMenuView.swift; sourceTree = "<group>"; };
 		C9D40AB82559C31000EBB69C /* FullScreenModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenModalView.swift; sourceTree = "<group>"; };
 		C9DC8F4C2570452800A17712 /* MarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketView.swift; sourceTree = "<group>"; };
 		C9DC8F4F257046B800A17712 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		C9DC8F5225707D3800A17712 /* GalleryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryItemView.swift; sourceTree = "<group>"; };
+		C9DC8F5525707E0700A17712 /* MarketItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketItemView.swift; sourceTree = "<group>"; };
+		C9DC8F592570800C00A17712 /* Duck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Duck.swift; sourceTree = "<group>"; };
+		C9DC8F7F2572CA9500A17712 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		C9DC8F8D2572CFFA00A17712 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		C9E9549A255C5F43008D8081 /* cardsgreensquare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardsgreensquare.png; sourceTree = "<group>"; };
 		C9E9549B255C5F43008D8081 /* cardssgreen.xcf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cardssgreen.xcf; sourceTree = "<group>"; };
 		C9ED2662255CD4C1002B607E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -80,6 +85,7 @@
 				C94CB46825582A19004681A2 /* Hand.swift */,
 				C99619162554BFB100960345 /* Card.swift */,
 				C94CB46525577902004681A2 /* Deck.swift */,
+				C9DC8F592570800C00A17712 /* Duck.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -87,17 +93,13 @@
 		C94CB45E2557193F004681A2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C9D40AB52559C15B00EBB69C /* StartMenuView.swift */,
-				C9961900255451E300960345 /* GameView.swift */,
 				C99619192554C00C00960345 /* HandView.swift */,
 				C99619112554520B00960345 /* CardView.swift */,
 				C94CB46125571E80004681A2 /* BackgroundView.swift */,
 				C9D40AB82559C31000EBB69C /* FullScreenModalView.swift */,
-				C9ED2662255CD4C1002B607E /* SettingsView.swift */,
-				C9ED2665255CD4D0002B607E /* AboutView.swift */,
 				C9F0BBDD25607E65002EE8CC /* ItemToolbar.swift */,
-				C9DC8F4C2570452800A17712 /* MarketView.swift */,
-				C9DC8F4F257046B800A17712 /* GalleryView.swift */,
+				C9DC8F5225707D3800A17712 /* GalleryItemView.swift */,
+				C9DC8F5525707E0700A17712 /* MarketItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -130,11 +132,11 @@
 		C99618FB255451E300960345 /* Quackjack */ = {
 			isa = PBXGroup;
 			children = (
-				C9D40AA42559AFDE00EBB69C /* Quackjack.entitlements */,
-				C99618FC255451E300960345 /* AppDelegate.swift */,
-				C99618FE255451E300960345 /* SceneDelegate.swift */,
+				C9DC8F7F2572CA9500A17712 /* App.swift */,
+				C9DC8F8D2572CFFA00A17712 /* Store.swift */,
 				C9ED266D255CD6BC002B607E /* ContentView.swift */,
 				C94CB45D25571934004681A2 /* Models */,
+				C9DC8F9225730A2200A17712 /* Pages */,
 				C94CB45E2557193F004681A2 /* Views */,
 				C94CB45F25571954004681A2 /* Utils */,
 				C9E95498255C5EE0008D8081 /* Resources */,
@@ -152,6 +154,19 @@
 				C9961905255451E400960345 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C9DC8F9225730A2200A17712 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				C9D40AB52559C15B00EBB69C /* StartMenuView.swift */,
+				C9961900255451E300960345 /* GameView.swift */,
+				C9DC8F4C2570452800A17712 /* MarketView.swift */,
+				C9DC8F4F257046B800A17712 /* GalleryView.swift */,
+				C9ED2665255CD4D0002B607E /* AboutView.swift */,
+				C9ED2662255CD4C1002B607E /* SettingsView.swift */,
+			);
+			path = Pages;
 			sourceTree = "<group>";
 		};
 		C9E95498255C5EE0008D8081 /* Resources */ = {
@@ -238,17 +253,20 @@
 			files = (
 				C94CB46625577902004681A2 /* Deck.swift in Sources */,
 				C9D40AB62559C15B00EBB69C /* StartMenuView.swift in Sources */,
-				C99618FD255451E300960345 /* AppDelegate.swift in Sources */,
 				C9D40AB92559C31000EBB69C /* FullScreenModalView.swift in Sources */,
-				C99618FF255451E300960345 /* SceneDelegate.swift in Sources */,
+				C9DC8F5A2570800C00A17712 /* Duck.swift in Sources */,
+				C9DC8F8E2572CFFA00A17712 /* Store.swift in Sources */,
 				C94CB46225571E80004681A2 /* BackgroundView.swift in Sources */,
 				C99619172554BFB100960345 /* Card.swift in Sources */,
 				C9DC8F50257046B800A17712 /* GalleryView.swift in Sources */,
 				C9961901255451E300960345 /* GameView.swift in Sources */,
 				C9ED2666255CD4D0002B607E /* AboutView.swift in Sources */,
+				C9DC8F5625707E0700A17712 /* MarketItemView.swift in Sources */,
 				C94CB46925582A19004681A2 /* Hand.swift in Sources */,
+				C9DC8F802572CA9500A17712 /* App.swift in Sources */,
 				C99619122554520B00960345 /* CardView.swift in Sources */,
 				C9ED266E255CD6BC002B607E /* ContentView.swift in Sources */,
+				C9DC8F5325707D3800A17712 /* GalleryItemView.swift in Sources */,
 				C996191A2554C00C00960345 /* HandView.swift in Sources */,
 				C996191F2554C08000960345 /* StatefulPreviewWrapper.swift in Sources */,
 				C9F0BBDE25607E65002EE8CC /* ItemToolbar.swift in Sources */,

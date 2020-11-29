@@ -1,5 +1,5 @@
 //
-//  GalleryView.swift
+//  MarketView.swift
 //  Quackjack
 //
 //  Created by Matt Stillwell on 11/26/20.
@@ -7,19 +7,28 @@
 
 import SwiftUI
     
-struct GalleryView: View {
+struct MarketView: View {
+    
+    @State var credits: Int = 100
+    @State var marketItems: [Duck] = []
+    
+    func onMount() {
+        credits = Store.getCredits()
+        marketItems = Store.getAllDucks()
+    }
+    
     var body: some View {
         ZStack {
             
             Rectangle()
                 .foregroundColor(.white)
-                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             
             VStack {
             
-                List{
-                    Text("duck 1")
-                    Text("duck 2")
+                List {
+                    ForEach(marketItems) { item in
+                        MarketItemView(credits: $credits, item: item)
+                    }
                 }
 //                Image("duck")
 //                    .resizable()
@@ -31,15 +40,20 @@ struct GalleryView: View {
 //
 //                Text("This is an app written by Natt Stilwell")
             }
-            .navigationTitle("My Gallery")
+            .navigationTitle("Market")
+            .toolbar(content: {
+                Text("\(credits) credits").fontWeight(.regular)
+            })
             .offset(x: 0, y: -50)
     
+        }.onAppear {
+            onMount()
         }
     }
 }
 
-struct GalleryView_Previews: PreviewProvider {
+struct MarketView_Previews: PreviewProvider {
     static var previews: some View {
-        GalleryView()
+        MarketView()
     }
 }
