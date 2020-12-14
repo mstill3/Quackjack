@@ -13,8 +13,7 @@ struct MarketItemView: View {
     
     func onPurchaseButtonClick() -> Void {
         Store.addMyDuck(duck: item)
-        credits = credits - item.cost
-        Store.setCredits(credits: credits)
+        Store.decrementCredits(num: item.cost)
     }
     
     func hasBeenPurchased() -> Bool {

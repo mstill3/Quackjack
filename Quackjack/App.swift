@@ -11,6 +11,7 @@ import SwiftUI
 @main
 struct QuackjackApp: App {
     static let VERSION = "1.0.1"
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
 
     var body: some Scene {
         WindowGroup {

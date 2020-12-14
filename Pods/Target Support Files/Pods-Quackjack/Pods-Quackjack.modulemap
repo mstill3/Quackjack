@@ -1,0 +1,6 @@
+framework module Pods_Quackjack {
+  umbrella header "Pods-Quackjack-umbrella.h"
+
+  export *
+  module * { export * }
+}

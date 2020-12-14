@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
+import GoogleMobileAds
 
 
 struct GameView: View {
     
+    var rewardAd: Rewarded
+
     @State private var betCredits: Int = 10
     @State private var credits: Int = 100
     @State private var result: String = ""
@@ -31,13 +34,35 @@ struct GameView: View {
 
     
     init() {
+        rewardAd = Rewarded()
         _dealerHand = State(initialValue: [deck.draw(), deck.draw()])
         _playerHand = State(initialValue: [deck.draw(), deck.draw()])
     }
     
+    func rewardFn() {
+        credits += 100
+        Store.setCredits(credits: credits)
+        gameState = GAME_STATE.UNSTARTED
+    }
+    
+    func onRewardClick() {
+        rewardAd.showAd(rewardFunction: rewardFn)
+    }
+    
     func onMount() {
+        playerHand = []
+        dealerHand = []
+        
+        dealerHand.append(deck.draw())
+        dealerHand.append(deck.draw())
+        playerHand.append(deck.draw())
+        playerHand.append(deck.draw())
+        
         print("ContentView appeared!")
         credits = Store.getCredits()
+        if (credits <= 0) {
+            gameState = GAME_STATE.BROKE
+        }
     }
     
     func onUnmount() {
@@ -88,6 +113,26 @@ struct GameView: View {
         if credits > 0 {
             
             gameState = GAME_STATE.PLAYING
+            
+            if (Store.getMinBet() == 0) {
+                Store.setMinBet(min: betCredits)
+            }
+            
+            if (betCredits < Store.getMinBet()) {
+                Store.setMinBet(min: betCredits)
+            }
+            
+            if (Store.getMaxBet() == 0) {
+                Store.setMaxBet(max: betCredits)
+            }
+            
+            if (betCredits > Store.getMaxBet()) {
+                Store.setMaxBet(max: betCredits)
+            }
+            
+            Store.setAverageBet(avg: ((Store.getAverageBet() * Float(Store.getTotalMatchesPlayed()) + Float(betCredits)) /  (Float(Store.getTotalMatchesPlayed()) + 1.0)))
+            
+            Store.incrementTotalMatchesPlayed()
             
             flipCard(person: "dealer", num: 1)
 
@@ -211,6 +256,7 @@ struct GameView: View {
 
 //            resetGame()
             gameState = GAME_STATE.COMPLETED
+            Store.incrementTotalLost(credits: betCredits)
         }
         
         if(betCredits > credits) {
@@ -220,6 +266,8 @@ struct GameView: View {
         if (credits == 0) {
             gameState = GAME_STATE.BROKE
         }
+        
+        Store.setCredits(credits: credits)
     }
     
     func dealerPlay() -> Void {
@@ -235,14 +283,17 @@ struct GameView: View {
         if (totalSum > 21) {
             result = "You win!"
             credits += (betCredits * 2)
+            Store.incrementTotalWon(credits: (betCredits * 2))
         } else if (totalSum > playerTotalSum) {
             result = "You lose"
             credits -= betCredits
+            Store.incrementTotalLost(credits: betCredits)
         } else if (totalSum == playerTotalSum) {
             result = "Draw"
         } else {
             result = "You win!"
             credits += (betCredits * 2)
+            Store.incrementTotalWon(credits: (betCredits * 2))
         }
         
         if(betCredits > credits) {
@@ -315,6 +366,19 @@ struct GameView: View {
                     .padding(.all, 10)
                     .padding([.leading, .trailing], 20)
                     .background(getButtonColor(disabled: gameState != GAME_STATE.UNSTARTED), alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .cornerRadius(20)
+                    
+                    
+                    // Reward button
+                    Button(action: onRewardClick,
+                           label: {
+                      Text("Reward")
+                    })
+                    .disabled(gameState != GAME_STATE.BROKE)
+                    .foregroundColor(.white)
+                    .padding(.all, 10)
+                    .padding([.leading, .trailing], 20)
+                    .background(getButtonColor(disabled: gameState != GAME_STATE.BROKE), alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .cornerRadius(20)
                     
                     
@@ -394,6 +458,7 @@ struct GameView: View {
         }.onDisappear {
             onUnmount()
         }
+        .navigationBarBackButtonHidden(gameState == GAME_STATE.PLAYING)
     
     }
     

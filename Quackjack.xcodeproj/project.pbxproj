@@ -3,13 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01C6E24B0E57187E48A1CAF4 /* Pods_Quackjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEDAA874B67B24737D156015 /* Pods_Quackjack.framework */; };
+		C94BCAA22586F02F000743CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94BCAA02586F02F000743CE /* AppDelegate.swift */; };
+		C94BCAA32586F02F000743CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94BCAA12586F02F000743CE /* SceneDelegate.swift */; };
 		C94CB46225571E80004681A2 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94CB46125571E80004681A2 /* BackgroundView.swift */; };
 		C94CB46625577902004681A2 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94CB46525577902004681A2 /* Deck.swift */; };
 		C94CB46925582A19004681A2 /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94CB46825582A19004681A2 /* Hand.swift */; };
+		C963A03C257C7729000CC8B7 /* DropdownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C963A03B257C7729000CC8B7 /* DropdownButton.swift */; };
+		C963A03F257D2A6B000CC8B7 /* DropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C963A03E257D2A6B000CC8B7 /* DropView.swift */; };
+		C963A046257D394A000CC8B7 /* StoreUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C963A045257D394A000CC8B7 /* StoreUtils.swift */; };
 		C9961901255451E300960345 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9961900255451E300960345 /* GameView.swift */; };
 		C9961903255451E400960345 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9961902255451E400960345 /* Assets.xcassets */; };
 		C9961906255451E400960345 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9961905255451E400960345 /* Preview Assets.xcassets */; };
@@ -18,6 +24,7 @@
 		C99619172554BFB100960345 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99619162554BFB100960345 /* Card.swift */; };
 		C996191A2554C00C00960345 /* HandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99619192554C00C00960345 /* HandView.swift */; };
 		C996191F2554C08000960345 /* StatefulPreviewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C996191E2554C08000960345 /* StatefulPreviewWrapper.swift */; };
+		C99DE206258736A7009109B7 /* RewardAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99DE205258736A7009109B7 /* RewardAd.swift */; };
 		C9D40AB62559C15B00EBB69C /* StartMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D40AB52559C15B00EBB69C /* StartMenuView.swift */; };
 		C9D40AB92559C31000EBB69C /* FullScreenModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D40AB82559C31000EBB69C /* FullScreenModalView.swift */; };
 		C9DC8F4D2570452800A17712 /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DC8F4C2570452800A17712 /* MarketView.swift */; };
@@ -37,9 +44,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		256B0D392A2977B6A9D0991B /* Pods-Quackjack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quackjack.debug.xcconfig"; path = "Target Support Files/Pods-Quackjack/Pods-Quackjack.debug.xcconfig"; sourceTree = "<group>"; };
+		880541C0658A5F7974AB3914 /* Pods-Quackjack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quackjack.release.xcconfig"; path = "Target Support Files/Pods-Quackjack/Pods-Quackjack.release.xcconfig"; sourceTree = "<group>"; };
+		C94BCAA02586F02F000743CE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C94BCAA12586F02F000743CE /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C94CB46125571E80004681A2 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		C94CB46525577902004681A2 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		C94CB46825582A19004681A2 /* Hand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
+		C963A03B257C7729000CC8B7 /* DropdownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownButton.swift; sourceTree = "<group>"; };
+		C963A03E257D2A6B000CC8B7 /* DropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropView.swift; sourceTree = "<group>"; };
+		C963A045257D394A000CC8B7 /* StoreUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreUtils.swift; sourceTree = "<group>"; };
 		C99618F9255451E300960345 /* Quackjack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quackjack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9961900255451E300960345 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		C9961902255451E400960345 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,6 +64,7 @@
 		C99619162554BFB100960345 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		C99619192554C00C00960345 /* HandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandView.swift; sourceTree = "<group>"; };
 		C996191E2554C08000960345 /* StatefulPreviewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatefulPreviewWrapper.swift; sourceTree = "<group>"; };
+		C99DE205258736A7009109B7 /* RewardAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardAd.swift; sourceTree = "<group>"; };
 		C9D40AB52559C15B00EBB69C /* StartMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartMenuView.swift; sourceTree = "<group>"; };
 		C9D40AB82559C31000EBB69C /* FullScreenModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenModalView.swift; sourceTree = "<group>"; };
 		C9DC8F4C2570452800A17712 /* MarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketView.swift; sourceTree = "<group>"; };
@@ -66,6 +81,7 @@
 		C9ED266D255CD6BC002B607E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C9F0BBDD25607E65002EE8CC /* ItemToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemToolbar.swift; sourceTree = "<group>"; };
 		C9F0BBE02560B78E002EE8CC /* updates.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = updates.txt; sourceTree = "<group>"; };
+		DEDAA874B67B24737D156015 /* Pods_Quackjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quackjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,12 +89,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01C6E24B0E57187E48A1CAF4 /* Pods_Quackjack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C1C33BA97601752E0430D27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEDAA874B67B24737D156015 /* Pods_Quackjack.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		31ECDB814C384E9622589D05 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				256B0D392A2977B6A9D0991B /* Pods-Quackjack.debug.xcconfig */,
+				880541C0658A5F7974AB3914 /* Pods-Quackjack.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C94CB45D25571934004681A2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +134,8 @@
 				C9F0BBDD25607E65002EE8CC /* ItemToolbar.swift */,
 				C9DC8F5225707D3800A17712 /* GalleryItemView.swift */,
 				C9DC8F5525707E0700A17712 /* MarketItemView.swift */,
+				C963A03B257C7729000CC8B7 /* DropdownButton.swift */,
+				C963A03E257D2A6B000CC8B7 /* DropView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -107,9 +143,18 @@
 		C94CB45F25571954004681A2 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				C963A045257D394A000CC8B7 /* StoreUtils.swift */,
 				C996191E2554C08000960345 /* StatefulPreviewWrapper.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		C963A041257D382D000CC8B7 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				C9DC8F8D2572CFFA00A17712 /* Store.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 		C99618F0255451E300960345 = {
@@ -118,6 +163,8 @@
 				C9F0BBE02560B78E002EE8CC /* updates.txt */,
 				C99618FB255451E300960345 /* Quackjack */,
 				C99618FA255451E300960345 /* Products */,
+				31ECDB814C384E9622589D05 /* Pods */,
+				0C1C33BA97601752E0430D27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,16 +180,19 @@
 			isa = PBXGroup;
 			children = (
 				C9DC8F7F2572CA9500A17712 /* App.swift */,
-				C9DC8F8D2572CFFA00A17712 /* Store.swift */,
+				C94BCAA02586F02F000743CE /* AppDelegate.swift */,
+				C94BCAA12586F02F000743CE /* SceneDelegate.swift */,
 				C9ED266D255CD6BC002B607E /* ContentView.swift */,
+				C99DE205258736A7009109B7 /* RewardAd.swift */,
 				C94CB45D25571934004681A2 /* Models */,
 				C9DC8F9225730A2200A17712 /* Pages */,
 				C94CB45E2557193F004681A2 /* Views */,
+				C963A041257D382D000CC8B7 /* Store */,
 				C94CB45F25571954004681A2 /* Utils */,
 				C9E95498255C5EE0008D8081 /* Resources */,
 				C9961902255451E400960345 /* Assets.xcassets */,
-				C9961907255451E400960345 /* LaunchScreen.storyboard */,
 				C996190A255451E400960345 /* Info.plist */,
+				C9961907255451E400960345 /* LaunchScreen.storyboard */,
 				C9961904255451E400960345 /* Preview Content */,
 			);
 			path = Quackjack;
@@ -185,9 +235,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C996190D255451E400960345 /* Build configuration list for PBXNativeTarget "Quackjack" */;
 			buildPhases = (
+				DAA3B631235E5B843E93CED4 /* [CP] Check Pods Manifest.lock */,
+				C1801442DD1A139F3F66E9F0 /* [CP] Prepare Artifacts */,
 				C99618F5255451E300960345 /* Sources */,
 				C99618F6255451E300960345 /* Frameworks */,
 				C99618F7255451E300960345 /* Resources */,
+				1F006400769A9B7E85228696 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -246,6 +299,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F006400769A9B7E85228696 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quackjack/Pods-Quackjack-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quackjack/Pods-Quackjack-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Quackjack/Pods-Quackjack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1801442DD1A139F3F66E9F0 /* [CP] Prepare Artifacts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quackjack/Pods-Quackjack-artifacts-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Prepare Artifacts";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quackjack/Pods-Quackjack-artifacts-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Quackjack/Pods-Quackjack-artifacts.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAA3B631235E5B843E93CED4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quackjack-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C99618F5255451E300960345 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -256,22 +368,28 @@
 				C9D40AB92559C31000EBB69C /* FullScreenModalView.swift in Sources */,
 				C9DC8F5A2570800C00A17712 /* Duck.swift in Sources */,
 				C9DC8F8E2572CFFA00A17712 /* Store.swift in Sources */,
+				C963A03C257C7729000CC8B7 /* DropdownButton.swift in Sources */,
 				C94CB46225571E80004681A2 /* BackgroundView.swift in Sources */,
+				C94BCAA22586F02F000743CE /* AppDelegate.swift in Sources */,
 				C99619172554BFB100960345 /* Card.swift in Sources */,
 				C9DC8F50257046B800A17712 /* GalleryView.swift in Sources */,
+				C94BCAA32586F02F000743CE /* SceneDelegate.swift in Sources */,
 				C9961901255451E300960345 /* GameView.swift in Sources */,
 				C9ED2666255CD4D0002B607E /* AboutView.swift in Sources */,
 				C9DC8F5625707E0700A17712 /* MarketItemView.swift in Sources */,
 				C94CB46925582A19004681A2 /* Hand.swift in Sources */,
+				C99DE206258736A7009109B7 /* RewardAd.swift in Sources */,
 				C9DC8F802572CA9500A17712 /* App.swift in Sources */,
 				C99619122554520B00960345 /* CardView.swift in Sources */,
 				C9ED266E255CD6BC002B607E /* ContentView.swift in Sources */,
+				C963A03F257D2A6B000CC8B7 /* DropView.swift in Sources */,
 				C9DC8F5325707D3800A17712 /* GalleryItemView.swift in Sources */,
 				C996191A2554C00C00960345 /* HandView.swift in Sources */,
 				C996191F2554C08000960345 /* StatefulPreviewWrapper.swift in Sources */,
 				C9F0BBDE25607E65002EE8CC /* ItemToolbar.swift in Sources */,
 				C9ED2663255CD4C1002B607E /* SettingsView.swift in Sources */,
 				C9DC8F4D2570452800A17712 /* MarketView.swift in Sources */,
+				C963A046257D394A000CC8B7 /* StoreUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,11 +525,13 @@
 		};
 		C996190E255451E400960345 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 256B0D392A2977B6A9D0991B /* Pods-Quackjack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Quackjack/Quackjack.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "Quackjack/\"Preview Content\"";
 				DEVELOPMENT_TEAM = HCXH5PWVYZ;
 				ENABLE_PREVIEWS = YES;
@@ -420,7 +540,63 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleMobileAds\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UserMessagingPlatform\"",
+					"-framework",
+					"\"WebKit\"",
+					"-framework",
+					"\"nanopb\"",
+					"-weak_framework",
+					"\"AdSupport\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
+					"-weak_framework",
+					"\"SafariServices\"",
+					"-weak_framework",
+					"\"WebKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bitbybit.Quackjack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
@@ -431,11 +607,13 @@
 		};
 		C996190F255451E400960345 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 880541C0658A5F7974AB3914 /* Pods-Quackjack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Quackjack/Quackjack.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "Quackjack/\"Preview Content\"";
 				DEVELOPMENT_TEAM = HCXH5PWVYZ;
 				ENABLE_PREVIEWS = YES;
@@ -444,7 +622,63 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleMobileAds\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UserMessagingPlatform\"",
+					"-framework",
+					"\"WebKit\"",
+					"-framework",
+					"\"nanopb\"",
+					"-weak_framework",
+					"\"AdSupport\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
+					"-weak_framework",
+					"\"SafariServices\"",
+					"-weak_framework",
+					"\"WebKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bitbybit.Quackjack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
